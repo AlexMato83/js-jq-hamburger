@@ -16,7 +16,7 @@ header {
 
 #logo {
   height: 100%;
-  width: 15%;
+  width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ header {
 }
 
 #navigazione {
-  width: 40%;
+  width: 540px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -83,11 +83,26 @@ header {
   position: absolute;
   right: 20px;
   top: 20px;
-  color: white;
+  color: aqua;
   font-size: 35px;
   text-decoration: none;
 }
+#hamburger-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    height: calc(100vh - 80px);
+    width: 100vw;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: aqua;
+}
+#hamburger-menu a {
+  font-size:-webkit-xxx-large;
+  text-decoration: none;
+}
 @media screen and (max-width: 1000px){
 
    #hamburger {
@@ -104,7 +119,7 @@ header {
       color: lightgrey;
       font-size: 20px;
    }
-   
+
 
 }
 

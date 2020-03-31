@@ -1,10 +1,14 @@
-$(".fas.fa-bars").click(
+var burgerino = $(".fas.fa-bars");
+var crocetta = $(".fas.fa-times");
+burgerino.click(
   function(){
-    $(".hamburger-menu").show();
+    burgerino.hide();
+    $("#hamburger-menu").show();
   }
 )
-$(".fas.fa-times").click(
+crocetta.click(
   function(){
-    $(".hamburger-menu").hide();
+    burgerino.show();
+    $("#hamburger-menu").hide();
   }
 )
